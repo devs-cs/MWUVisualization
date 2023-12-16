@@ -33,7 +33,7 @@ class MWUVisualization(Scene):
     y_avg = np.sum(y, axis=0) / T
     return None, y_avg'''
         
-        # Initialize the algorithm's parameters
+        # Initialize algo params
         epsilon = 0.1
         lam = 2.0
         C = np.array([[1.3, 1.5, 0.5], [1.4, 0.2, 0.5], [0.7, -.1, 2]])  # Example C matrix
@@ -43,7 +43,7 @@ class MWUVisualization(Scene):
         x = x_hat * (x_hat[0]/np.linalg.norm(x_hat, 1))
         y = np.zeros((T, m))
         code = self.build_code_block(mwu_code_str)
-        # Display the WHACK and MWU code
+
         # mwu_code = Code(code=mwu_code_str, language="Python", background = "window",line_spacing = 1)
         # mwu_code.code = remove_invisible_chars(mwu_code.code)
         # code = self.build_code_block(mwu_code_str)
@@ -52,10 +52,6 @@ class MWUVisualization(Scene):
 
         # code_group.code = remove_invisible_chars(code_group.code)
         # self.play(FadeIn(code))
-
-        # Display initial values on the right
-
-        
         
         t_text  = MathTex(r"T = ", np.round(T,2)).scale(0.7)
         x_hat_text = MathTex(r"\hat{x} = ", disArr(np.round(x_hat, 2))).scale(0.7)
@@ -94,7 +90,7 @@ class MWUVisualization(Scene):
        
         x_broke = False
         
-        # Logic for the MWU algorith
+        # Logic for the MWU algorithim with included highlighting
         prior_line = 4
         for t in range(T):
             self.remove(caption)
@@ -113,11 +109,8 @@ class MWUVisualization(Scene):
                 caption = Text("All constraints are satisfied", font_size=30).to_edge(DOWN)
                 self.add(caption)
                 prior_line = 7
-                
-                x_broke = True
-                break  # All constraints are satisfied
-            if x_broke:
-                break
+
+                break  
             self.highlight(6,8)
             
             prior_line = 9
@@ -132,7 +125,7 @@ class MWUVisualization(Scene):
                     self.add(caption)
                     self.highlight(prior_line,10)
                     
-                    x_hat = WHACK(i, x_hat, C, epsilon, lam)  # Apply WHACK function
+                    x_hat = WHACK(i, x_hat, C, epsilon, lam)  #WHACK
                     self.remove(caption)
                     caption = Text(f"Running WHACK on x_hat", font_size=30).to_edge(DOWN)
                     self.add(caption)
@@ -174,7 +167,7 @@ class MWUVisualization(Scene):
                     y_text_new = MathTex(f"y_{t+1} = ", disArr(np.round(y[t], 2))).scale(0.7)
                     y_text_new.move_to([5,-0.6, 0])
                     self.play(Transform(y_text,y_text_new))
-                      # Handle only the first unsatisfied constraint
+                      # Handle only one constraint
                     break
 
         # Calculate and display y_avg
@@ -188,8 +181,7 @@ class MWUVisualization(Scene):
             y_avg_text.move_to([5, -2, 0])
             self.play(FadeIn(y_avg_text))
             self.wait(2)
-
-        # Clear the caption
+            
         self.play(FadeOut(caption))
 
     def build_code_block(self, code_str):
