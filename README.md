@@ -2,3 +2,8 @@
 />](https://www.youtube.com/embed/ITa58q07zEQ)
 
 **Video 1**:  Lambda = 2, Epsilon = 0.1 
+
+[<img src="https://img.youtube.com/vi/esAERTQrpZo/hqdefault.jpg"
+/>](https://www.youtube.com/embed/esAERTQrpZo)
+
+**Video 2**:  Lambda = 2, Epsilon = 0.1 
