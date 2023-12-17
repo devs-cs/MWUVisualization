@@ -1,7 +1,7 @@
 [<img src="https://img.youtube.com/vi/JRTPWG0tW8c/hqdefault.jpg"
 />](https://www.youtube.com/embed/JRTPWG0tW8c)
 
-**Video 1**:  Lambda = 2, Epsilon = 0.1 
+**Primary Video**:  Lambda = 2, Epsilon = 0.1 
 
 [<img src="https://img.youtube.com/vi/esAERTQrpZo/hqdefault.jpg"
 />](https://www.youtube.com/embed/esAERTQrpZo)
