@@ -1,7 +1,11 @@
+**Visualization of the Section 4.1 Static Algorithm**
+
 [<img src="https://img.youtube.com/vi/JRTPWG0tW8c/hqdefault.jpg"
 />](https://www.youtube.com/embed/JRTPWG0tW8c)
 
 **Primary Video**:  Lambda = 2, Epsilon = 0.1 
+
+![Pseudocode](MWU_Pseudocode.jpeg)
 
 [<img src="https://img.youtube.com/vi/esAERTQrpZo/hqdefault.jpg"
 />](https://www.youtube.com/embed/esAERTQrpZo)
