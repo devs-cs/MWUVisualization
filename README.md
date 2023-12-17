@@ -7,6 +7,8 @@
 
 ![Pseudocode](MWU_Pseudocode.jpeg)
 
+**Psuedocode** for Algorithm
+
 [<img src="https://img.youtube.com/vi/esAERTQrpZo/hqdefault.jpg"
 />](https://www.youtube.com/embed/esAERTQrpZo)
 
