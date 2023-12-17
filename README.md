@@ -1,4 +1,4 @@
-**Visualization of the Section 4.1 Static Algorithm**
+**Visualization of the Section 4.1 Static Algorithm [Click Videos]**
 
 [<img src="https://img.youtube.com/vi/JRTPWG0tW8c/hqdefault.jpg"
 />](https://www.youtube.com/embed/JRTPWG0tW8c)
