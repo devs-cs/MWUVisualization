@@ -36,7 +36,7 @@ class MWUVisualization(Scene):
         # Initialize algo params
         epsilon = 0.1
         lam = 2.0
-        C = np.array([[1.3, 1.5, 0.5], [1.4, 0.2, 0.5], [0.7, -.1, 2]])  # Example C matrix
+        C = np.array([[1.3, 1.5, 0.5], [1.4, 0.2, 0.5], [0.7, .1, 2]])  # Example C matrix
         m, n = C.shape
         T = int(np.ceil(np.log(n) / epsilon**2 * lam))
         x_hat = np.ones(n)
